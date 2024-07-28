@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import dpsLogo from './assets/DPS.svg';
+import UserTable from "./UserTable.jsx";
 
 function App() {
 	const [users, setUsers] = useState([]);
@@ -22,7 +23,7 @@ function App() {
 				</a>
 			</div>
 			<div className="home-card">
-				<p>Your solution goes here 😊</p>
+				<UserTable users={users}/>
 			</div>
 		</>
 	);
