@@ -1,7 +1,19 @@
-import dpsLogo from './assets/DPS.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import dpsLogo from './assets/DPS.svg';
 
 function App() {
+	const [users, setUsers] = useState([]);
+	const [searchTerm, setSearchTerm] = useState('');
+	const [selectedCity, setSelectedCity] = useState('');
+	const [highlightOldest, setHighlightOldest] = useState(false);
+
+	useEffect(() => {
+	  fetch('https://dummyjson.com/users')
+		.then(response => response.json())
+		.then(data => setUsers(data.users));
+	}, []);
+	console.log(users);
 	return (
 		<>
 			<div>
