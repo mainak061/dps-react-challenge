@@ -37,7 +37,7 @@ const UserTable = ({ users, highlightOldest }) => {
 						<td>
 							{user.firstName} {user.lastName}
 						</td>
-						<td>{user.city}</td>
+						<td>{user.address.city}</td>
 						<td>{new Date(user.birthDate).toLocaleDateString()}</td>
 					</tr>
 				))}
