@@ -3,7 +3,7 @@ import './App.css';
 import dpsLogo from './assets/DPS.svg';
 import "./SearchBar.css";
 import SearchBar from "./SearchBar.jsx";
-import UserTable from './UserTable.jsx';
+// import UserTable from './UserTable.jsx';
 
 function App() {
 	const [users, setUsers] = useState([]);
@@ -26,7 +26,7 @@ function App() {
 				<SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} selectedCity={selectedCity} setSelectedCity={setSelectedCity} highlightOldest={highlightOldest} setHighlightOldest={setHighlightOldest} users={users} />
 			</div>
 			<div className="home-card">
-				<UserTable users={users} />
+				{/* <UserTable users={users} /> */}
 			</div>
 		</>
 	);
