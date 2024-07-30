@@ -1,4 +1,5 @@
 import React from 'react';
+import "./SearchBar.css";
 
 const SearchBar = ({
 	searchTerm,
@@ -12,7 +13,7 @@ const SearchBar = ({
 	const cities = [...new Set(users.map((user) => user.address.city))];
 
 	return (
-		<div>
+		<div className='searchBar'>
 			<input
 				type="text"
 				value={searchTerm}

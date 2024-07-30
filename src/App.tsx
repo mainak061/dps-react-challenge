@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import dpsLogo from './assets/DPS.svg';
+import "./SearchBar.css";
 import SearchBar from "./SearchBar.jsx";
 import UserTable from './UserTable.jsx';
 
